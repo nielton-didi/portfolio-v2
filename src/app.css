@@ -1,3 +1,136 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Ultralight.otf') format('opentype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-UltralightItalic.otf') format('opentype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Thin.otf') format('opentype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-ThinItalic.otf') format('opentype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Light.otf') format('opentype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-LightItalic.otf') format('opentype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-RegularItalic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-MediumItalic.otf') format('opentype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Semibold.otf') format('opentype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-SemiboldItalic.otf') format('opentype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-BoldItalic.otf') format('opentype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Heavy.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-Black.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro';
+	src: url('$lib/assets/fonts/sf-pro/SF-Pro-Text-BlackItalic.otf') format('opentype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+html,
+body{
+	width: 100dvw;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
