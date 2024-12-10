@@ -129,8 +129,42 @@
 }
 
 html,
-body{
+body {
 	width: 100dvw;
-	overflow-x: hidden;
+	height: 100dvh;
+	overflow: hidden;
 	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	display: none;
+	width: 4px; /* Set a consistent width for the vertical scrollbar */
+	height: 4px; /* Set a consistent height for the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+	display: none;
+	background-color: #626262; /* Custom thumb color */
+	border-radius: 50px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+	display: none;
+	background: transparent; /* Transparent scrollbar track */
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated-li {
+	opacity: 0; /* Start hidden */
+	animation: fadeInUp 0.8s ease-in-out forwards;
 }
