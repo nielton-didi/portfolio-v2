@@ -72,8 +72,8 @@
 	class={`flex h-screen max-h-screen w-screen flex-col items-center justify-start overflow-hidden bg-light-neutral-10 font-sf-pro`}
 >
 	<!-- header -->
-	<div
-		class={`absolute top-0 z-40 flex w-full flex-col items-center justify-center transition-all duration-300 ease-in-out`}
+	<header
+		class={`absolute top-0 z-40 flex w-full flex-col items-center justify-center transition-all duration-300 ease-in-out ${yScroll > 5 ? `translate-y-0` : `-translate-y-full`}`}
 	>
 		<div
 			class={`flex h-14 min-h-14 w-full flex-row items-center justify-center bg-light-neutral-10 px-6 md:h-20 md:min-h-20 md:px-0`}
@@ -127,10 +127,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 	<!-- drawer -->
 	<div
-		class={`absolute z-50 h-screen max-h-screen overflow-hidden bg-light-neutral-10 bg-opacity-85 backdrop-blur-sm ${openDrawer ? `translate-x-0 w-screen` : `translate-x-full opacity-30 brightness-75 w-0`} transition-all delay-100 duration-500 ease-in-out`}
+		class={`absolute z-50 h-screen max-h-screen overflow-hidden bg-light-neutral-10 bg-opacity-85 backdrop-blur-sm ${openDrawer ? `w-screen translate-x-0` : `w-0 translate-x-full opacity-30 brightness-75`} transition-all delay-100 duration-300 ease-in-out`}
 	>
 		<div class={`relative flex h-full w-full flex-col items-end justify-between px-6 py-24`}>
 			<button
