@@ -20,12 +20,12 @@
 		/>
 	</div>
 	<!-- details -->
-	<div class={`flex w-full max-w-full flex-col items-start justify-start`}>
+	<div class={`flex w-full max-w-full flex-col ${reversed ? `items-end` : `items-start`} justify-start`}>
 		<p class={`text-2xl font-semibold leading-tight text-light-neutral-100 mt-4`}>{project.title}</p>
 		<p class={`mt-2 max-w-md text-lg font-light leading-normal text-light-neutral-80`}>
 			{project.description}
 		</p>
-		<div class={`mt-10 flex w-full max-w-full flex-row flex-wrap items-start justify-start gap-2`}>
+		<div class={`mt-10 flex w-full max-w-full flex-row flex-wrap ${reversed ? `justify-end` : `justify-start`} items-start gap-2`}>
 			{#each project.skills as skill}
 				<Pills title={skill}></Pills>
 			{/each}
