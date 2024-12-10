@@ -1,19 +1,28 @@
 <script lang="ts">
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { onMount } from 'svelte';
+	import type { PageData } from './$types';
 
 	let activeSection: string | null = null; // Tracks the current active section
 	const sections = ['about', 'experience', 'project']; // List of section IDs
 
+	export let data: PageData;
+
 	onMount(() => {
 		const observerOptions = {
 			root: null, // Use the viewport as the root
-			threshold: 0.45 // Trigger when 45% of the section is visible
+			threshold: Array.from({ length: 101 }, (_, i) => i / 100) // Break into 1% increments
 		};
 
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					activeSection = entry.target.id;
+				const viewportHeight = window.innerHeight; // Get the viewport height
+				const visibleHeight = entry.boundingClientRect.height * entry.intersectionRatio; // Calculate visible part of the section
+				const coveredPercent = visibleHeight / viewportHeight; // Calculate how much of the viewport is covered by the section
+
+				// Check if the section covers at least 45% of the viewport
+				if (coveredPercent >= 0.45) {
+					activeSection = entry.target.id; // Mark this section as active
 				}
 			});
 		}, observerOptions);
@@ -88,7 +97,7 @@
 					>
 						Designer / Developer.
 					</h1>
-					<p class={`text-lg text-light-neutral-70 font-normal mt-4`}>
+					<p class={`mt-4 text-lg font-normal text-light-neutral-70`}>
 						I create user-friendly design and build reliable applications.
 					</p>
 				</div>
@@ -150,32 +159,54 @@
 							>
 						</span>
 					</a>
-					<!-- <button class={`h-9 rounded-md bg-light-neutral-100 px-4`}
-						><span class={`text-md text-light-neutral-10`}>View Resume</span></button
-					>
-					<button class={`h-9 rounded-md bg-light-neutral-100 px-4`}
-						><span class={`text-md text-light-neutral-10`}>Send An Email</span></button
-					> -->
 				</div>
 			</div>
 		</div>
 	</section>
 	<section
 		id="experience"
-		class={`flex h-screen max-h-screen w-screen flex-col items-center justify-center bg-slate-300`}
+		class={`flex h-screen max-h-screen w-screen flex-col items-center justify-start bg-slate-300`}
 	>
 		Experience Section
 	</section>
-	<section
-		id="project"
-		class={`flex h-screen max-h-screen w-screen flex-col items-center justify-center bg-slate-400`}
-	>
-		Project Section
+	<section id="project" class={`flex min-h-max w-screen flex-col items-center justify-start`}>
+		<div class={`my-24 flex w-full max-w-screen-lg flex-col items-center justify-start gap-10`}>
+			<div class={`sticky flex w-full flex-col items-start justify-center gap-4`}>
+				<p class={`text-[32px] font-bold leading-none tracking-wide text-light-neutral-70`}>
+					Feature Projects.
+				</p>
+			</div>
+
+			<div class={`flex w-full flex-col items-start justify-start gap-24`}>
+				{#each data.projects as project, i}
+					<ProjectCard {project} reversed={i % 2 != 0}></ProjectCard>
+				{/each}
+			</div>
+			<div class={`mt-10 flex w-full flex-row items-center justify-center`}>
+				<a href="/" class={`group flex flex-row items-center justify-center gap-2`}>
+					<span
+						class={`text-lg text-light-neutral-70 underline-offset-2 transition-all duration-300 ease-in-out group-hover:text-light-neutral-100 group-hover:underline `}
+						>View Full Project Archive</span
+					>
+					<span
+						class={`text-light-neutral-70 transition-all duration-300 ease-in-out group-hover:translate-x-3 group-hover:text-light-neutral-100`}
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-4"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+							/>
+						</svg>
+					</span>
+				</a>
+			</div>
+		</div>
 	</section>
 </main>
-
-<style>
-	.active {
-		color: blue;
-	}
-</style>
