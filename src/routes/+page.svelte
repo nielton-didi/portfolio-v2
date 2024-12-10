@@ -55,12 +55,24 @@
 		// Cleanup observer on unmount
 		return () => observer.disconnect();
 	});
+
+	let box: any;
+	let yScroll = 0;
+
+	function parseScroll() {
+		yScroll = box.scrollTop;
+	}
+
+	onMount(() => parseScroll());
 </script>
 
 <div
 	class={`flex h-screen max-h-screen w-screen flex-col items-center justify-start overflow-hidden bg-light-neutral-10 font-sf-pro`}
 >
-	<div class={`absolute top-0 z-50 flex w-full flex-col items-center justify-center`}>
+	<!-- header -->
+	<div
+		class={`absolute top-0 z-50 flex w-full flex-col items-center justify-center ${yScroll > 5 ? `translate-y-0` : `-translate-y-full`} transition-all duration-300 ease-in-out`}
+	>
 		<div
 			class={`flex h-20 min-h-20 w-full flex-row items-center justify-center bg-light-neutral-10`}
 		>
@@ -91,7 +103,11 @@
 			</div>
 		</div>
 	</div>
-	<main class={`block h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth`}>
+	<main
+		bind:this={box}
+		on:scroll={parseScroll}
+		class={`block h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth`}
+	>
 		<section
 			id="about"
 			class={`flex h-screen max-h-screen w-full flex-col items-center justify-center py-24`}
@@ -106,6 +122,7 @@
 					</p>
 				</div>
 				<!-- middle -->
+
 				<div class={`flex w-full flex-col items-center justify-center`}>
 					<div class={`flex w-full flex-col items-end justify-center`}>
 						<p
@@ -131,29 +148,55 @@
 				</div>
 
 				<!-- bottom -->
-				<div
-					class={`flex h-10 min-h-10 w-full max-w-full flex-row items-center justify-end gap-6 overflow-hidden`}
-				>
-					<a
-						href="/"
-						class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
-						>LinkedIn</a
+				<div class={`flex w-full flex-row items-center justify-between`}>
+					<div>
+
+						<div
+							class={`flex max-w-max flex-row items-center justify-start gap-1 ${yScroll > 50 ? `hidden` : ``} transition-all duration-500 ease-in-out animate-bounce`}
+						>
+							<span class={`text-light-neutral-70`}
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.0"
+									stroke="currentColor"
+									class="size-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+									/>
+								</svg>
+							</span>
+							<p class={`text-md font-light text-light-neutral-70`}>Scroll down to know more</p>
+						</div>
+					</div>
+					<div
+						class={`flex h-10 min-h-10 max-w-max flex-row items-center justify-end gap-6 overflow-hidden`}
 					>
-					<a
-						href="/"
-						class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
-						>Github</a
-					>
-					<a
-						href="/"
-						class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
-						>Email</a
-					>
-					<a
-						href="/"
-						class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
-						>Resume</a
-					>
+						<a
+							href="/"
+							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
+							>LinkedIn</a
+						>
+						<a
+							href="/"
+							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
+							>Github</a
+						>
+						<a
+							href="/"
+							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
+							>Email</a
+						>
+						<a
+							href="/"
+							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
+							>Resume</a
+						>
+					</div>
 				</div>
 			</div>
 		</section>
