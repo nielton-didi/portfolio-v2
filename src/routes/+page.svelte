@@ -150,9 +150,8 @@
 				<!-- bottom -->
 				<div class={`flex w-full flex-row items-center justify-between`}>
 					<div>
-
 						<div
-							class={`flex max-w-max flex-row items-center justify-start gap-1 ${yScroll > 50 ? `hidden` : ``} transition-all duration-500 ease-in-out animate-bounce`}
+							class={`flex max-w-max flex-row items-center justify-start gap-1 ${yScroll > 50 ? `hidden` : ``} animate-bounce transition-all duration-500 ease-in-out`}
 						>
 							<span class={`text-light-neutral-70`}
 								><svg
@@ -177,17 +176,21 @@
 						class={`flex h-10 min-h-10 max-w-max flex-row items-center justify-end gap-6 overflow-hidden`}
 					>
 						<a
-							href="/"
+							href="https://www.linkedin.com/in/nieltondidi/"
+							target="_blank"
 							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
 							>LinkedIn</a
 						>
 						<a
-							href="/"
+							href="https://github.com/nielton-didi"
+							target="_blank"
 							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
 							>Github</a
 						>
+
 						<a
-							href="/"
+							href="mailto:nieltondidi@gmail.com"
+							target="_blank"
 							class={`text-lg font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline`}
 							>Email</a
 						>
@@ -263,7 +266,7 @@
 					<div class={`flex w-full flex-col items-center justify-start`}>
 						<div class={`flex w-full flex-row items-center justify-start`}>
 							<p class={`w-full text-start text-md font-medium text-light-neutral-80`}>
-								Other Versions
+								Other Versions of my portfolio
 							</p>
 						</div>
 						<ul class={`flex w-full flex-col items-start justify-start`}>
@@ -289,7 +292,7 @@
 				<div class={`flex h-full w-full flex-col items-center justify-start`}>
 					<div class={`flex w-full flex-col items-end justify-start`}>
 						<p class={`w-full text-end text-base text-light-neutral-70`}>
-							Designed and code by Nielton Didi.
+							Designed and coded by Nielton Didi.
 						</p>
 						<p class={`w-full text-end text-base text-light-neutral-70`}>© Nielton Didi 2024</p>
 					</div>
