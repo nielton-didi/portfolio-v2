@@ -331,7 +331,7 @@
 						>
 							Hi! I'm a
 							<span class={`font-medium text-light-neutral-90`}>Software Developer</span>
-							and <span class={`font-medium text-light-neutral-90`}>UI/UX Desginer</span> passionate
+							and <span class={`font-medium text-light-neutral-90`}>UI/UX Designer</span> passionate
 							about creating seamless, user-centered digital experiences. I specialize in
 							<span class={`font-medium text-light-neutral-90`}>minimalist design</span>, crafting
 							interfaces that are both visually striking and functional. <br /> <br /> Beyond
