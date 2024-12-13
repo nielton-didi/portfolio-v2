@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class={`project-card flex w-full scale-100 flex-col items-start justify-start gap-4 bg-light-neutral-10 py-4 transition-all duration-500 ease-in-out md:flex-row md:gap-10 md:py-6`}
+	class={`project-card flex w-full scale-100 flex-col items-start justify-start gap-4 bg-light-neutral-10 py-4 transition-all duration-500 ease-in-out md:flex-row md:gap-10 md:py-6 group`}
 >
 	<!-- title -->
 	<div
