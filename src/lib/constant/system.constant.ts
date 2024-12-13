@@ -73,7 +73,7 @@ export class SystemConstant {
 		},
 		{
 			startYear: 'Oct 2020',
-			endYear: 'Mar 2022',
+			endYear: 'Mar 2021',
 			position: 'Software Developer Intern',
 			companyName: 'Data Solutions Sarawak',
 			jobDescription:
