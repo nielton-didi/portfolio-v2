@@ -197,102 +197,109 @@
 	>
 		<!-- home -->
 		<section
-    id="home"
-    class={`flex h-screen max-h-screen w-full flex-col items-center justify-center px-6 py-12 md:px-0 md:py-24`}
->
-    <div class={`flex h-full w-full max-w-screen-lg flex-col items-end justify-between`}>
-        <!-- top -->
-        <div
-            class={`flex h-10 min-h-10 w-full max-w-full flex-row items-center justify-end overflow-hidden text-slide-up text-slide-up-1`}
-        >
-            <p class={`text-md font-light leading-tight text-light-neutral-70 md:text-lg`}>
-                Personal Portfolio
-            </p>
-        </div>
-        <!-- middle -->
-        <div class={`flex w-full flex-col items-center justify-center`}>
-            <div class={`flex w-full flex-col items-end justify-center text-slide-up text-slide-up-2`}>
-                <p
-                    class={`w-full text-end align-middle text-2xl font-semibold leading-tight tracking-normal text-light-neutral-100 md:text-[36px]`}
-                >
-                    Designer <span class={`font-thin text-light-neutral-70 md:text-[40px]`}>|</span> Developer
-                </p>
-            </div>
-            <div class={`mt-1 flex w-full flex-col items-end justify-center text-slide-up text-slide-up-3`}>
-                <p
-                    class={`w-full text-end text-xl font-medium leading-tight tracking-normal text-light-neutral-70 md:text-2xl`}
-                >
-                    Nielton Didi
-                </p>
-            </div>
-            <div class={`mt-0 flex w-full flex-col items-end justify-center text-slide-up text-slide-up-4`}>
-                <p
-                    class={`w-full text-end text-md font-light leading-tight tracking-normal text-light-neutral-70 md:text-lg`}
-                >
-                    Sarawak, Malaysia
-                </p>
-            </div>
-        </div>
+			id="home"
+			class={`flex h-screen max-h-screen w-full flex-col items-center justify-center px-6 py-12 md:px-0 md:py-24`}
+		>
+			<div class={`flex h-full w-full max-w-screen-lg flex-col items-end justify-between`}>
+				<!-- top -->
+				<div
+					class={`text-slide-up text-slide-up-1 flex h-10 min-h-10 w-full max-w-full flex-row items-center justify-end overflow-hidden`}
+				>
+					<p class={`text-md font-light leading-tight text-light-neutral-70 md:text-lg`}>
+						Personal Portfolio
+					</p>
+				</div>
+				<!-- middle -->
+				<div class={`flex w-full flex-col items-center justify-center`}>
+					<div
+						class={`text-slide-up text-slide-up-2 flex w-full flex-col items-end justify-center`}
+					>
+						<p
+							class={`w-full text-end align-middle text-2xl font-semibold leading-tight tracking-normal text-light-neutral-100 md:text-[36px]`}
+						>
+							Designer <span class={`font-thin text-light-neutral-70 md:text-[40px]`}>|</span> Developer
+						</p>
+					</div>
+					<div
+						class={`text-slide-up text-slide-up-3 mt-1 flex w-full flex-col items-end justify-center`}
+					>
+						<p
+							class={`w-full text-end text-xl font-medium leading-tight tracking-normal text-light-neutral-70 md:text-2xl`}
+						>
+							Nielton Didi
+						</p>
+					</div>
+					<div
+						class={`text-slide-up text-slide-up-4 mt-0 flex w-full flex-col items-end justify-center`}
+					>
+						<p
+							class={`w-full text-end text-md font-light leading-tight tracking-normal text-light-neutral-70 md:text-lg`}
+						>
+							Sarawak, Malaysia
+						</p>
+					</div>
+				</div>
 
-        <!-- bottom -->
-        <div class={`flex w-full flex-row items-end justify-between md:items-center text-slide-up text-slide-up-5`}>
-            <div>
-                <div
-                    class={`flex max-w-max flex-row items-center justify-start gap-1 ${yScroll > 50 ? `hidden` : ``} animate-bounce transition-all duration-500 ease-in-out`}
-                >
-                    <span class={`text-light-neutral-70`}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.0"
-                            stroke="currentColor"
-                            class="size-6"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                            />
-                        </svg>
-                    </span>
-                    <p class={`text-base font-light text-light-neutral-70 md:text-md`}>Scroll down</p>
-                </div>
-            </div>
-            <div
-                class={`flex min-h-max max-w-max flex-col items-end justify-end gap-4 overflow-hidden md:h-10 md:min-h-10 md:flex-row md:items-center md:justify-end md:gap-6 text-slide-up text-slide-up-6`}
-            >
-                <a
-                    href="https://www.linkedin.com/in/nieltondidi/"
-                    target="_blank"
-                    class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
-                    >LinkedIn</a
-                >
-                <a
-                    href="https://github.com/nielton-didi"
-                    target="_blank"
-                    class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
-                    >Github</a
-                >
+				<!-- bottom -->
+				<div
+					class={`text-slide-up text-slide-up-5 flex w-full flex-row items-end justify-between md:items-center`}
+				>
+					<div>
+						<div
+							class={`flex max-w-max flex-row items-center justify-start gap-1 ${yScroll > 50 ? `hidden` : ``} animate-bounce transition-all duration-500 ease-in-out`}
+						>
+							<span class={`text-light-neutral-70`}>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.0"
+									stroke="currentColor"
+									class="size-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+									/>
+								</svg>
+							</span>
+							<p class={`text-base font-light text-light-neutral-70 md:text-md`}>Scroll down</p>
+						</div>
+					</div>
+					<div
+						class={`text-slide-up text-slide-up-6 flex min-h-max max-w-max flex-col items-end justify-end gap-4 overflow-hidden md:h-10 md:min-h-10 md:flex-row md:items-center md:justify-end md:gap-6`}
+					>
+						<a
+							href="https://www.linkedin.com/in/nieltondidi/"
+							target="_blank"
+							class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
+							>LinkedIn</a
+						>
+						<a
+							href="https://github.com/nielton-didi"
+							target="_blank"
+							class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
+							>Github</a
+						>
 
-                <a
-                    href="mailto:nieltondidi@gmail.com"
-                    target="_blank"
-                    class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
-                    >Email</a
-                >
-                <a
-                    href="/files/Nielton Didi Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
-                    >Resume</a
-                >
-            </div>
-        </div>
-    </div>
-</section>
-
+						<a
+							href="mailto:nieltondidi@gmail.com"
+							target="_blank"
+							class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
+							>Email</a
+						>
+						<a
+							href="/files/Nielton Didi Resume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							class={`text-md font-light text-light-neutral-70 underline-offset-2 transition-all duration-200 ease-in-out hover:font-normal hover:text-light-neutral-100 hover:underline md:text-lg`}
+							>Resume</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- about -->
 		<section id="about" class={`flex w-full flex-col items-center justify-start gap-6 md:h-screen`}>
@@ -380,8 +387,9 @@
 				class={`mb-24 flex w-full max-w-screen-lg flex-row items-center justify-end gap-4 px-6 md:px-0`}
 			>
 				<a
-					href="https://www.linkedin.com/in/nieltondidi/"
+					href="/files/Nielton Didi Resume.pdf"
 					target="_blank"
+					rel="noopener noreferrer"
 					class={`group flex h-8 min-h-8 flex-row items-center justify-center gap-2 rounded-md bg-light-neutral-100 px-3 text-base text-light-neutral-10 transition-all duration-300 ease-in-out hover:gap-3 hover:bg-light-neutral-90`}
 				>
 					View Resume<span
