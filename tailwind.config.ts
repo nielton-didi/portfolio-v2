@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
+	darkMode: 'class',
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	mode: 'jit',
 	theme: {
@@ -61,11 +62,5 @@ export default {
 			}
 		}
 	},
-	safelist: [
-		{
-			pattern: /(dark|light)/,
-			variants: ['hover']
-		}
-	],
 	plugins: []
 } satisfies Config;
