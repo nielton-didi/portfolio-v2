@@ -62,11 +62,5 @@ export default {
 			}
 		}
 	},
-	safelist: [
-		{
-			pattern: /(dark|light)/,
-			variants: ['hover']
-		}
-	],
 	plugins: []
 } satisfies Config;
