@@ -3,6 +3,7 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 
 	export let data: PageData;
 
@@ -70,6 +71,9 @@
 <div
 	class={`flex h-screen max-h-screen w-screen flex-col items-center justify-start overflow-hidden bg-light-neutral-10 font-sf-pro`}
 >
+	<div class={`absolute right-1/2 z-50 top-0 flex flex-row items-center justify-center`}>
+		<ThemeToggle></ThemeToggle>
+	</div>
 	<!-- header -->
 	<header
 		class={`absolute top-0 z-40 flex w-full flex-col items-center justify-center transition-all duration-300 ease-in-out ${yScroll > 5 ? `translate-y-0` : `-translate-y-full`}`}
