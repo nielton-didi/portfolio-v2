@@ -610,7 +610,7 @@
 							</g></svg
 						></span
 					>
-					<span class={`text-md font-light`}>www.linkedin.com/in/nieltondidi</span>
+					<span class={`text-md font-light text-light-neutral-100 dark:text-dark-neutral-100`}>www.linkedin.com/in/nieltondidi</span>
 				</a>
 				<a
 					href="https://github.com/nielton-didi"
@@ -636,7 +636,7 @@
 							</g></svg
 						>
 					</span>
-					<span class={`text-md font-light`}>github.com/nielton-didi</span>
+					<span class={`text-md font-light text-light-neutral-100 dark:text-dark-neutral-100`}>github.com/nielton-didi</span>
 				</a>
 				<a
 					href="https://dribbble.com/nieltondidi"
@@ -662,7 +662,7 @@
 							</g></svg
 						>
 					</span>
-					<span class={`text-md font-light`}>dribbble.com/nieltondidi</span>
+					<span class={`text-md font-light text-light-neutral-100 dark:text-dark-neutral-100`}>dribbble.com/nieltondidi</span>
 				</a>
 				<a
 					href="mailto:nieltondidi@gmail.com"
@@ -687,7 +687,7 @@
 							</g></svg
 						>
 					</span>
-					<span class={`text-md font-light`}>nieltondidi@gmail.com</span>
+					<span class={`text-md font-light text-light-neutral-100 dark:text-dark-neutral-100`}>nieltondidi@gmail.com</span>
 				</a>
 			</div>
 		</div>
