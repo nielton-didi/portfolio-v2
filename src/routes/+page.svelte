@@ -718,33 +718,7 @@
 						{/each}
 					</ul>
 				</div>
-				<div class={`flex w-full flex-col items-center justify-start`}>
-					<div class={`flex w-full flex-row items-center justify-start`}>
-						<p
-							class={`w-full text-start text-base font-medium text-light-neutral-80 dark:text-dark-neutral-80 md:text-md`}
-						>
-							Other Versions of my portfolio
-						</p>
-					</div>
-					<ul class={`flex w-full flex-col items-start justify-start`}>
-						<li class={`flex w-full flex-row items-center justify-start`}>
-							<a
-								href="https://v1.borneomonkey.com/"
-								target="_blank"
-								class={`w-full text-start text-base font-light capitalize text-light-neutral-70 dark:text-dark-neutral-40 md:text-md`}
-								>Version 1</a
-							>
-						</li>
-						<li class={`flex w-full flex-row items-center justify-start`}>
-							<a
-								href="https://borneomonkey.com/"
-								target="_blank"
-								class={`w-full text-start text-base font-light capitalize text-light-neutral-70 dark:text-dark-neutral-40 md:text-md`}
-								>Version 2 (current)</a
-							>
-						</li>
-					</ul>
-				</div>
+
 			</div>
 			<div class={`mt-6 flex h-full w-full flex-col items-center justify-start md:mt-0`}>
 				<div class={`flex w-full flex-col items-end justify-start`}>
