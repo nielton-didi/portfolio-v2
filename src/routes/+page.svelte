@@ -510,7 +510,7 @@
 			class={`mb-24 flex w-full max-w-screen-lg flex-row items-center justify-start gap-4 px-6 md:px-0`}
 		>
 			<a
-				href="/files/Nielton Didi Resume.pdf"
+				href="/files/Nielton_Didi_Resume_2026.pdf"
 				target="_blank"
 				rel="noopener noreferrer"
 				class={`group flex h-8 min-h-8 flex-row items-center justify-center gap-2 rounded-md bg-light-neutral-100 px-3 text-base text-light-neutral-10 transition-all duration-300 ease-in-out hover:gap-3 hover:bg-light-neutral-90 dark:bg-dark-neutral-100 dark:text-dark-neutral-10 dark:hover:bg-dark-neutral-90`}
