@@ -3,8 +3,31 @@ import type { ExperienceDTO, ProjectDTO } from '$lib/dto/system.dto';
 export class SystemConstant {
 	public static experience: ExperienceDTO[] = [
 		{
-			startYear: 'Jun 2024',
+			startYear: 'March 2025',
 			endYear: 'Present',
+			position: 'Software Developer',
+			companyName: 'Upstack Studio',
+			jobDescription:
+				'Develop mobile and web applications across frontend and backend, integrating with external services such as Firebase and Google Cloud Platform. Implement CI/CD pipelines, conduct code reviews, and collaborate with cross-functional teams to deliver quality solutions.',
+			skills: [
+				'React',
+				'React Native',
+				'Next JS',
+				'Nest JS',
+				'Typescript',
+				'Tailwind',
+			],
+			responsibility: [
+				'Develop and maintain mobile and web applications, contributing across both frontend and backend.',
+				'Integrate with external services including Firebase and Google Cloud Platform.',
+				'Implement and manage CI/CD pipelines to streamline deployment workflows.',
+				'Conduct code reviews to ensure code quality, consistency, and best practices.',
+				'Collaborate with cross-functional teams to deliver user-centric, high-quality solutions.'
+			]
+		},
+		{
+			startYear: 'Jun 2024',
+			endYear: 'Feb 2025',
 			position: 'Frontend Developer Team Lead',
 			companyName: 'Impact Business Solutions',
 			jobDescription:

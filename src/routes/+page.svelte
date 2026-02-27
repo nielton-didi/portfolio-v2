@@ -510,7 +510,7 @@
 			class={`mb-24 flex w-full max-w-screen-lg flex-row items-center justify-start gap-4 px-6 md:px-0`}
 		>
 			<a
-				href="/files/Nielton Didi Resume.pdf"
+				href="/files/Nielton_Didi_Resume_2026.pdf"
 				target="_blank"
 				rel="noopener noreferrer"
 				class={`group flex h-8 min-h-8 flex-row items-center justify-center gap-2 rounded-md bg-light-neutral-100 px-3 text-base text-light-neutral-10 transition-all duration-300 ease-in-out hover:gap-3 hover:bg-light-neutral-90 dark:bg-dark-neutral-100 dark:text-dark-neutral-10 dark:hover:bg-dark-neutral-90`}
@@ -718,33 +718,7 @@
 						{/each}
 					</ul>
 				</div>
-				<div class={`flex w-full flex-col items-center justify-start`}>
-					<div class={`flex w-full flex-row items-center justify-start`}>
-						<p
-							class={`w-full text-start text-base font-medium text-light-neutral-80 dark:text-dark-neutral-80 md:text-md`}
-						>
-							Other Versions of my portfolio
-						</p>
-					</div>
-					<ul class={`flex w-full flex-col items-start justify-start`}>
-						<li class={`flex w-full flex-row items-center justify-start`}>
-							<a
-								href="https://v1.borneomonkey.com/"
-								target="_blank"
-								class={`w-full text-start text-base font-light capitalize text-light-neutral-70 dark:text-dark-neutral-40 md:text-md`}
-								>Version 1</a
-							>
-						</li>
-						<li class={`flex w-full flex-row items-center justify-start`}>
-							<a
-								href="https://borneomonkey.com/"
-								target="_blank"
-								class={`w-full text-start text-base font-light capitalize text-light-neutral-70 dark:text-dark-neutral-40 md:text-md`}
-								>Version 2 (current)</a
-							>
-						</li>
-					</ul>
-				</div>
+
 			</div>
 			<div class={`mt-6 flex h-full w-full flex-col items-center justify-start md:mt-0`}>
 				<div class={`flex w-full flex-col items-end justify-start`}>
