@@ -1,19 +1,3 @@
-<svelte:head>
-	<title>Nielton Didi — UI/UX Designer & Developer</title>
-	<meta name="description" content="Explore the portfolio of Nielton Didi, a professional UI/UX designer and front-end developer specializing in creating user-centered designs and high-performance web applications." />
-	<meta name="keywords" content="UI/UX designer, front-end developer, portfolio, web design, app design, Nielton Didi" />
-
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Nielton Didi — UI/UX Designer & Developer" />
-	<meta property="og:description" content="Portfolio showcasing creative designs and robust front-end development projects." />
-	<meta property="og:url" content="https://nieltondidi.com" />
-	<meta property="og:locale" content="en_MY" />
-
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="Nielton Didi — UI/UX Designer & Developer" />
-	<meta name="twitter:description" content="Portfolio showcasing creative designs and robust front-end development projects." />
-</svelte:head>
-
 <script lang="ts">
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import { onMount } from 'svelte';
