@@ -12,22 +12,10 @@
 
 <svelte:head>
 	<title>Help Me Recover From Job Loss and Debt Crisis — Nielton Didi</title>
-	<meta name="description" content="I'm Nielton, a software engineer from Sarawak, Malaysia. I unexpectedly lost my job in April 2026 and have accumulated RM16,000 in debt. I'm raising funds to cover urgent debts, rent, and basic living costs while I search for work. Every contribution helps." />
-	<meta name="keywords" content="fundraising, Malaysia, Sarawak, job loss, debt, financial crisis, DuitNow, CIMB, donate, help" />
-
-	<!-- Open Graph (Facebook, WhatsApp, Telegram previews) -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Help Me Recover From Job Loss and Debt Crisis — Nielton Didi" />
-	<meta property="og:description" content="I'm Nielton, a software engineer from Sarawak. I lost my job in April 2026 and now carry RM16,000 in debt. I'm asking for help to cover urgent repayments, rent, and daily necessities while I continue job hunting. Any amount matters." />
-	<meta property="og:image" content="/images/fundraising/hero.png" />
-	<meta property="og:url" content="https://nieltondidi.com/fundraising" />
-	<meta property="og:locale" content="en_MY" />
-
-	<!-- Twitter / X card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Help Me Recover From Job Loss and Debt Crisis — Nielton Didi" />
-	<meta name="twitter:description" content="I'm Nielton, a software engineer from Sarawak. I lost my job in April 2026 and now carry RM16,000 in debt. Any contribution helps me survive this period." />
-	<meta name="twitter:image" content="/images/fundraising/hero.png" />
+	<meta
+		name="description"
+		content="I'm Nielton, a software engineer from Sarawak, Malaysia. I lost my job in April 2026 and am facing serious financial difficulties. Any support is deeply appreciated."
+	/>
 </svelte:head>
 
 <!-- top nav bar -->
